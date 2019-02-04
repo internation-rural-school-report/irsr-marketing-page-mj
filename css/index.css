@@ -273,12 +273,12 @@ body {
   font-weight: bold;
 }
 .page-container {
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   background-image: url(../img/chalkboardcloseupzoom.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
-  width: 100%;
 }
 .content-background {
   background-image: url(../img/chalkboardcloseupzoom.jpg);
@@ -286,11 +286,6 @@ body {
   background-position: center;
   margin-top: -5rem;
   width: 100%;
-}
-@media (min-width: 900px) {
-  .content-background {
-    margin-top: -10rem;
-  }
 }
 .content-container {
   display: flex;
