@@ -131,6 +131,11 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  height: 100%;
 }
 header {
   display: flex;
@@ -146,9 +151,10 @@ header #header {
   margin: 2rem;
   border-top: 0.5rem solid white;
   border-bottom: 0.5rem solid white;
+  color: white;
 }
 header #header .header-content h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 0.5rem;
   text-align: center;
 }
@@ -171,6 +177,7 @@ nav ul li {
   font-size: 1rem;
   padding: 1rem 3rem;
   border: 1px solid black;
+  margin: 0.5rem;
 }
 nav ul li a {
   font-size: 2rem;
@@ -178,11 +185,11 @@ nav ul li a {
 }
 @media (min-width: 500px) {
   header #header .header-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding: 1rem;
   }
   header #header .header-content p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1rem;
   }
   nav ul {
@@ -202,6 +209,12 @@ footer {
 .page-container {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  margin: 0;
 }
 .content-container {
   display: flex;
@@ -211,6 +224,8 @@ footer {
   border: 1px solid black;
   padding: 2rem;
   margin: 2rem;
+  background: white 20%;
+  visibility: hidden;
 }
 .content-container .content-section h2 {
   font-size: 2rem;
@@ -219,6 +234,11 @@ footer {
   font-size: 1.5rem;
 }
 @media (min-width: 500px) {
+  .page-container {
+    background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .content-container {
     flex-direction: row;
   }

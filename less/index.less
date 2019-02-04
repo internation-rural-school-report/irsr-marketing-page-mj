@@ -9,6 +9,12 @@
 .page-container {
     width: 100%;
     font-family: @opensans;
+    background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
 }
 .content-container {
     display: flex;
@@ -17,6 +23,8 @@
         border: 1px solid black;
         padding: 2rem;
         margin: 2rem;
+        background: white 20%;
+        visibility: hidden;
         h2 {
             font-size: 2rem;
         }
@@ -27,8 +35,14 @@
 }
 
 @media @desktop {
+    .page-container {
+        background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .content-container {
         flex-direction: row;
+    
     }
 }
 
