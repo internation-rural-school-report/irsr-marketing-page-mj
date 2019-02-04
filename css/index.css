@@ -201,6 +201,7 @@ footer {
 }
 .page-container {
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 .content-container {
   display: flex;
