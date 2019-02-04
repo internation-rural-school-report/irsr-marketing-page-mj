@@ -235,7 +235,7 @@ body {
 }
 @media (min-width: 900px) {
   .header-container {
-    padding-left: 0;
+    padding-left: 2rem;
     padding-top: 5rem;
     padding-bottom: 1rem;
     align-items: flex-start;
@@ -259,7 +259,8 @@ body {
 }
 .footer-container {
   width: 100%;
-  padding: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
 }
 .footer-container footer {
   display: flex;
