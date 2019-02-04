@@ -169,13 +169,14 @@ nav ul {
 }
 nav ul li {
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
   border: 1px solid black;
 }
 nav ul li a {
-  font-size: 2em;
+  font-size: 2rem;
+  text-decoration: none;
 }
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
   header #header .header-content h1 {
     font-size: 3rem;
     padding: 1rem;
@@ -191,7 +192,33 @@ nav ul li a {
   nav ul li {
     padding: 2rem;
   }
+  nav ul li a {
+    font-size: 2rem;
+  }
+}
+footer {
+  text-align: center;
 }
 .page-container {
   width: 100%;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-container .content-section {
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 2rem;
+}
+.content-container .content-section h2 {
+  font-size: 2rem;
+}
+.content-container .content-section p {
+  font-size: 1.5rem;
+}
+@media (min-width: 500px) {
+  .content-container {
+    flex-direction: row;
+  }
 }

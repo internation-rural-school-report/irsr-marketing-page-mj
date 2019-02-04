@@ -4,4 +4,30 @@
 @import "mixins.less";
 @import "header.less";
 @import "footer.less";
-@import "homepage.less";
+
+
+.page-container {
+    width: 100%;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    .content-section {
+        border: 1px solid black;
+        padding: 2rem;
+        margin: 2rem;
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media @desktop {
+    .content-container {
+        flex-direction: row;
+    }
+}
+
