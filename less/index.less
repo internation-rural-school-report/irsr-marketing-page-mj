@@ -9,22 +9,51 @@
 .page-container {
     width: 100%;
     font-family: @opensans;
-    background: @bgcolor;
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
 }
+
+ .content-background {
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -5rem;
+    height: 100%;
+    width: 100%;
+}
+
+@media @desktop {
+    .content-background {
+        margin-top: -10rem;
+    }
+}
+
 .content-container {
-    border-top: 2px solid @chalkboardgrey;
     display: flex;
     flex-direction: column;
+    border-top: 3px solid @chalkboardgrey;
     .content-section {
         border: 1px solid black;
         padding: 2rem;
-        margin: 2rem;
-        background: white 20%;
-        h2 {
-            font-size: 2rem;
-        }
-        p {
-            font-size: 1.5rem;
+        margin: 3rem;
+        background: @headeropaquebg;
+        .content-text{
+            background: @headermoreopaquebg;
+            padding: 2rem;
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: .5rem;
+                border-bottom: 1px dotted black;
+                text-align: center;
+            }
+            p {
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
         }
     }
 }
@@ -35,12 +64,5 @@
 
 .menu-item-selected {
     display: block;
-}
-
-@media @desktop {
-    .content-container {
-        flex-direction: row;
-    
-    }
 }
 
