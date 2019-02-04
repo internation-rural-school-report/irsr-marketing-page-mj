@@ -10,7 +10,7 @@ class MenuLink {
         const menuLinks = document.querySelectorAll('.menu-link');
         menuLinks.forEach( link => link.classList.remove('menu-link-selected'));
         this.element.classList.add('menu-link-selected');
-        this.MenuItem.choose();
+        this.menuItem.choose();
     }
 }
 class MenuItem {
@@ -27,4 +27,3 @@ class MenuItem {
 let links = document.querySelectorAll('.menu-link');
 links.forEach(link => new MenuLink(link));
 
- console.log(links);

@@ -22,7 +22,7 @@
             padding: 2rem;
             margin: 2rem;
             color: @chalkboardgrey;
-            background-color: rgba(248, 247, 216, 0.5);
+            background-color: @headeropaquebg;
             border: 2px solid @chalkboardgrey;
             .header-content {
                 h1 {
@@ -55,7 +55,7 @@ justify-content: center;
             padding: 1rem 3rem;
             border: 2px solid @chalkboardgrey;
             margin: .5rem;
-            background-color: rgba(248, 247, 216, 0.5);
+            background-color: @headeropaquebg;
             a {
                 font-size: 2rem;
                 text-decoration: none;
@@ -73,10 +73,10 @@ justify-content: center;
     nav {
         ul {
             .menu-link {
-            background-color: rgba(248, 247, 216, 0.5);
+            background-color: @headeropaquebg;
             }
             .menu-link-selected {
-                background-color: rgba(248, 247, 216, 0.8);
+                background-color: @headermoreopaquebg;
             }
         }
     }
@@ -90,7 +90,7 @@ justify-content: center;
 @media @desktop {
     header {
         padding: 0;
-        padding-top: 7rem;
+        padding-top: 10rem;
         margin: 0;
         #header {
             padding: 0;
