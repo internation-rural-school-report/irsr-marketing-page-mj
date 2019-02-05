@@ -37,7 +37,7 @@
             background: @headermoreopaquebg;
             padding: 2rem;
             h2 {
-                font-size: 2rem;
+                font-size: 3rem;
                 font-weight: bold;
                 padding: .5rem;
                 border-bottom: 1px dotted black;
@@ -59,3 +59,27 @@
     display: block;
 }
 
+// LOG IN FORM 
+
+.log-in-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem;
+    form {
+        border: 2px solid @chalkboardgrey;
+        padding: 1rem;
+        input {
+            margin: 1rem;
+            padding: .5rem;
+        }
+        .submit-button {
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+        }
+    }
+}

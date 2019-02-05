@@ -177,12 +177,14 @@ body {
   font-size: 1.5rem;
   padding: 0.5rem;
   text-align: center;
+  font-weight: bold;
 }
 .header-container nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .header-container nav ul {
   display: flex;
@@ -190,7 +192,7 @@ body {
 }
 .header-container nav ul li {
   font-size: 1rem;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   border: 2px solid #191a1c;
   margin: 0.5rem;
   background-color: rgba(248, 247, 216, 0.5);
@@ -250,9 +252,6 @@ body {
     align-items: space-around;
     justify-content: space-around;
   }
-  .header-container nav ul li {
-    padding: 2rem;
-  }
   .header-container nav ul li a {
     font-size: 2rem;
   }
@@ -304,7 +303,7 @@ body {
   padding: 2rem;
 }
 .content-container .content-section .content-text h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0.5rem;
   border-bottom: 1px dotted black;
@@ -319,4 +318,26 @@ body {
 }
 .menu-item-selected {
   display: block;
+}
+.log-in-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 1rem;
+}
+.log-in-form form {
+  border: 2px solid #191a1c;
+  padding: 1rem;
+}
+.log-in-form form input {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.log-in-form form .submit-button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
 }
