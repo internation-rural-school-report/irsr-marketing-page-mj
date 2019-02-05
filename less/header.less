@@ -7,15 +7,22 @@
 }
 */
    .header-container {
+       width: 100%;
+       height: 100%;
        display: flex;
        flex-direction: column-reverse;
        align-items: center;
        justify-content: center;
+       background-image: url(../img/chalkboardcloseupzoom.jpg); 
+       background-size: cover;
+       background-position: center;
    header {
         display: flex;
         justify-content: center;
         align-items: center;
         #header {
+            
+            background-color: @white;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -55,9 +62,9 @@ margin-bottom: 2rem;
         li {
             font-size: 1rem;
             padding: .5rem 3rem;
-            border: 2px solid @chalkboardgrey;
+            border: 2px solid @darkgrey;
             margin: .5rem;
-            background-color: @headeropaquebg;
+            background-color: @white;
             a {
                 font-size: @regular;
                 text-decoration: none;
@@ -71,32 +78,6 @@ margin-bottom: 2rem;
     }
 }
    }
-
-
-
-.second-header-container {
-    #second-header {
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid @darkgrey;
-            padding: 1rem;
-            h1 {
-                font-size: @jumbotron;
-                padding: 1rem;
-                border-bottom: 2px solid @darkgrey;
-            }
-            p {
-                font-size: @header;
-                padding: 1rem;
-            }
-        }
-    }
-}
-
-
 
 
 //Tablet Styles 
