@@ -24,7 +24,6 @@
     width: 100%;
 }
 
-
 .content-container {
     display: flex;
     flex-direction: column;
@@ -61,6 +60,13 @@
                     text-align: left;
                 }
             }
+            address {
+                font-size: 1.5rem;
+                padding: 1rem;
+                line-height: 2rem;
+                display: block;
+                text-align: center;
+            }
             .content-box-container {
                 display: flex;
                 flex-direction: column;
@@ -69,6 +75,10 @@
                     padding: 1rem;
                     margin: 1rem;
                     text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                 }
             }
         }
@@ -80,9 +90,32 @@
     max-width: 100%;
     width: 80%;
     height: auto;
+    margin: 1rem;
+    text-align: center;
 }
 
+// CONTENT SPECIFIC STYLES 
 
+
+//login page
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+//contact page 
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+// STYLES FOR JS 
+
+// classes for JS functionality for menu - content connection
 .menu-item {
     display: none;
 }
