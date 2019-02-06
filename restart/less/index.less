@@ -4,8 +4,59 @@
 @import "header.less";
 @import "footer.less"; 
 
+.page-background {
+   background-image: url(../img/building-ceiling-classroom-373488.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.page-container {
+    width: 100%;
+    height: auto;
+
+}
+
+
 // Main Content 
 
 .main-content-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 0 auto;
+    .content-section {
+        .content-text {
+            h2 {
+                font-family: @sourcesans;
+                font-size: @header;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-family: @sourcesans;
+                font-size: @smallheader;
+            }
+            p {
+                font-family: @opensans;
+                font-size: @regular;
+            }
+        }
+    }
+}
+
+.menu-item {
+display: none;
+}
+
+.menu-item-selected {
+display: block;
+background-color: @whiteopaque;
+padding: 3rem;
+box-shadow: .5rem .5rem @darkgrey;
+
 }

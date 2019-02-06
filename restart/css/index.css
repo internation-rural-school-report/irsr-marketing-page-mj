@@ -144,10 +144,75 @@ header {
   justify-content: center;
   align-items: center;
 }
+header .logo {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0.5rem 0.5rem #2A2A2A;
+}
+header .logo h1 {
+  font-size: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 header nav ul {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+}
+header nav ul li {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0.5rem 0.5rem #2A2A2A;
+}
+header nav ul li a {
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: #2A2A2A;
+  font-weight: bold;
+}
+.page-background {
+  background-image: url(../img/building-ceiling-classroom-373488.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100%;
+}
+.page-container {
+  width: 100%;
+  height: auto;
 }
 .main-content-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin: 0 auto;
+}
+.main-content-container .content-section .content-text h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.main-content-container .content-section .content-text h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5rem;
+}
+.main-content-container .content-section .content-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+}
+.menu-item {
+  display: none;
+}
+.menu-item-selected {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3rem;
+  box-shadow: 0.5rem 0.5rem #2A2A2A;
 }
