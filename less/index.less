@@ -51,6 +51,16 @@
                 font-size: 1.5rem;
                 padding: 1rem;
             }
+            ul {
+                border-top: 1px dotted @chalkboardgrey;
+                padding: 1rem;
+                list-style-type: square;
+                li {
+                    font-size: 1.25rem;
+                    padding: .5rem;
+                    text-align: left;
+                }
+            }
             .content-box-container {
                 display: flex;
                 flex-direction: column;
@@ -59,26 +69,21 @@
                     padding: 1rem;
                     margin: 1rem;
                     text-align: center;
-
                 }
             }
         }
     }
 }
 
-.image-background {
-    border: 1px solid @chalkboardgrey;
+
+
+
+.content-img {
     max-width: 100%;
-    background-position: center;
-    background-size: cover;
+    width: 80%;
     height: auto;
-    background-image: url(../img/colors-design-flatlay-983828.jpg);
-        p {
-            font-size: 1.6rem;
-            color: @chalkboardgrey;
-            font-weight: bold;
-        }
 }
+
 
 .menu-item {
     display: none;
