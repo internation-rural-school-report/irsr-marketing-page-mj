@@ -1,0 +1,96 @@
+
+@import "global.less";
+@import "variables.less";
+@import "mixins.less";
+@import "header.less";
+@import "footer.less";
+
+
+ .page-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    .default-content {
+    .content-text {
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    }
+    .content-section {
+        border: 1px solid black;
+        padding: 2rem;
+        line-height: 2.5rem;
+        background-color: @whiteopaque;
+        .content-text{
+            padding: 2rem;
+            h2 {
+                font-size: 3rem;
+                font-weight: bold;
+                padding: .5rem;
+                border-bottom: 1px dotted black;
+                text-align: center;
+            }
+            p {
+                font-size: 1.5rem;
+                padding: 1rem;
+<<<<<<< HEAD:old-design/less/index.less
+                strong {
+                    font-weight: bold;
+                }
+                em {
+                    font-style: italic;
+                }
+=======
+>>>>>>> parent of af42231... marketing copy for schools done:less/index.less
+            }
+        }
+    }
+}
+
+.menu-item {
+    display: none;
+}
+
+.menu-item-selected {
+    display: block;
+}
+
+// LOG IN FORM 
+
+.log-in-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem;
+    form {
+        border: 2px solid @chalkboardgrey;
+        padding: 1rem;
+        input {
+            margin: 1rem;
+            padding: .5rem;
+        }
+        .submit-button {
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+        }
+    }
+}
