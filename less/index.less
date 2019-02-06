@@ -43,12 +43,38 @@
                 border-bottom: 1px dotted black;
                 text-align: center;
             }
+            h3 {
+                font-size: 1.8rem;
+            }
             p {
                 font-size: 1.5rem;
                 padding: 1rem;
             }
+            .content-box-container {
+                display: flex;
+                .content-box {
+                    border: 1px dotted @chalkboardgrey;
+                    padding: 1rem;
+                    margin: 1rem;
+
+                }
+            }
         }
     }
+}
+
+.image-background {
+    border: 1px solid @chalkboardgrey;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    background-image: url(../img/colors-design-flatlay-983828.jpg);
+        p {
+            font-size: 1.6rem;
+            color: @chalkboardgrey;
+            font-weight: bold;
+        }
 }
 
 .menu-item {

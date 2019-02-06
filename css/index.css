@@ -310,9 +310,33 @@ body {
   border-bottom: 1px dotted black;
   text-align: center;
 }
+.content-container .content-section .content-text h3 {
+  font-size: 1.8rem;
+}
 .content-container .content-section .content-text p {
   font-size: 1.5rem;
   padding: 1rem;
+}
+.content-container .content-section .content-text .content-box-container {
+  display: flex;
+}
+.content-container .content-section .content-text .content-box-container .content-box {
+  border: 1px dotted #191a1c;
+  padding: 1rem;
+  margin: 1rem;
+}
+.image-background {
+  border: 1px solid #191a1c;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  background-image: url(../img/colors-design-flatlay-983828.jpg);
+}
+.image-background p {
+  font-size: 1.6rem;
+  color: #191a1c;
+  font-weight: bold;
 }
 .menu-item {
   display: none;
