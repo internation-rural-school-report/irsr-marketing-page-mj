@@ -192,13 +192,8 @@ body {
 }
 .header-container nav ul li {
   font-size: 1rem;
-<<<<<<< HEAD
-  padding: 0.5rem 3rem;
-  border: 2px solid #2A2A2A;
-=======
   padding: 1rem 3rem;
   border: 2px solid #191a1c;
->>>>>>> parent of ac15fac... some copy done, log in form styled
   margin: 0.5rem;
   background-color: #ffffff;
 }
@@ -261,17 +256,28 @@ body {
   .header-container header #header .header-content {
     padding: 1rem;
   }
-<<<<<<< HEAD
-  .header-container header nav {
-    margin-left: 2rem;
+}
+@media (min-width: 900px) and (min-width: 900px) {
+  .header-container {
+    padding-left: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-  .header-container header nav ul li a {
-=======
+  .header-container nav {
+    margin-top: 3rem;
+  }
+  .header-container nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+  }
   .header-container nav ul li {
     padding: 2rem;
   }
   .header-container nav ul li a {
->>>>>>> parent of ac15fac... some copy done, log in form styled
     font-size: 2rem;
   }
 }
@@ -332,15 +338,6 @@ body {
   font-size: 1.5rem;
   padding: 1rem;
 }
-<<<<<<< HEAD:old-design/css/index.css
-.content-container .content-section .content-text p strong {
-  font-weight: bold;
-}
-.content-container .content-section .content-text p em {
-  font-style: italic;
-}
-=======
->>>>>>> parent of af42231... marketing copy for schools done:css/index.css
 .menu-item {
   display: none;
 }
