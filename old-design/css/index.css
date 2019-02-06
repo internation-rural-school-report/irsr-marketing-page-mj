@@ -314,23 +314,23 @@ body {
 .content-container .content-section .content-text h2 {
   font-size: 3rem;
   font-weight: bold;
-  padding: 0.75rem;
+  padding: 0.5rem;
   border-bottom: 1px dotted black;
   text-align: center;
 }
-.content-container .content-section .content-text h3 {
-  font-size: 2rem;
-}
 .content-container .content-section .content-text p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding: 1rem;
 }
+<<<<<<< HEAD:old-design/css/index.css
 .content-container .content-section .content-text p strong {
   font-weight: bold;
 }
 .content-container .content-section .content-text p em {
   font-style: italic;
 }
+=======
+>>>>>>> parent of af42231... marketing copy for schools done:css/index.css
 .menu-item {
   display: none;
 }
@@ -358,29 +358,4 @@ body {
 .log-in-form form .submit-button {
   padding: 1rem 3rem;
   font-size: 1.5rem;
-}
-#school-info {
-  font-size: 2.5rem;
-  line-height: 2rem;
-}
-.login-types {
-  display: flex;
-  flex-direction: column;
-}
-.login-types .login-type {
-  border: 1px solid #191a1c;
-  padding: 2rem;
-  margin: 0.5rem;
-}
-@media (min-width: 900px) {
-  .login-types {
-    display: flex;
-    flex-direction: row;
-  }
-  .login-types .login-type {
-    text-align: justify;
-  }
-  .login-types .login-type h3 {
-    font-weight: bold;
-  }
 }
