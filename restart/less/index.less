@@ -32,6 +32,10 @@
     margin: 0 auto;
     .content-section {
         .content-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             h2 {
                 font-family: @sourcesans;
                 font-size: @header;
@@ -59,4 +63,35 @@ background-color: @whiteopaque;
 padding: 3rem;
 box-shadow: .5rem .5rem @darkgrey;
 
+}
+
+// school info section 
+
+.login-types {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    .login-type {
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+        h3 {
+            padding: .5rem;
+            border-bottom: 1px dotted @darkgrey;
+        }
+        p {
+            padding: .5rem;
+        }
+    }
+}
+
+.teacher-img {
+    background-image: url(../img/tra-nguyen-459276-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }

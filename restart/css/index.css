@@ -194,6 +194,12 @@ header nav ul li a {
   padding: 3rem;
   margin: 0 auto;
 }
+.main-content-container .content-section .content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .main-content-container .content-section .content-text h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 3rem;
@@ -215,4 +221,31 @@ header nav ul li a {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 3rem;
   box-shadow: 0.5rem 0.5rem #2A2A2A;
+}
+.login-types {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+.login-types .login-type {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.login-types .login-type h3 {
+  padding: 0.5rem;
+  border-bottom: 1px dotted #2A2A2A;
+}
+.login-types .login-type p {
+  padding: 0.5rem;
+}
+.teacher-img {
+  background-image: url(../img/tra-nguyen-459276-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
