@@ -27,4 +27,3 @@ class MenuItem {
 let links = document.querySelectorAll('.menu-link');
 links.forEach(link => new MenuLink(link));
 
-

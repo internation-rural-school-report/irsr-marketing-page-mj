@@ -137,18 +137,16 @@ html {
 body {
   height: 100%;
 }
-/* .background-image {
-    background-image: url(../img/nikhita-s-615116-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-}
-*/
-.header-container {
+.background-image {
+  background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
   width: 100%;
+}
+.header-container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -158,25 +156,25 @@ body {
   align-items: center;
 }
 .header-container header #header {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   margin: 2rem;
-  border: 2px solid #2A2A2A;
+  color: #191a1c;
+  background-color: rgba(248, 247, 216, 0.5);
+  border: 2px solid #191a1c;
 }
 .header-container header #header .header-content h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   padding: 1rem;
   text-align: center;
+  border-bottom: 1px dotted #191a1c;
 }
 .header-container header #header .header-content p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   text-align: center;
 }
@@ -195,69 +193,47 @@ body {
   padding: 1rem 3rem;
   border: 2px solid #191a1c;
   margin: 0.5rem;
-  background-color: #ffffff;
+  background-color: rgba(248, 247, 216, 0.5);
 }
 .header-container nav ul li a {
   font-size: 2rem;
   text-decoration: none;
-  color: #2A2A2A;
-  font-family: 'Open Sans', sans-serif;
+  color: #191a1c;
 }
 .header-container nav ul li:hover {
-  background-color: #45AB60;
+  background-color: rgba(248, 247, 216, 0.8);
 }
-@media (min-width: 500px) {
-  .header-container {
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+.header-container nav ul .menu-link {
+  background-color: rgba(248, 247, 216, 0.5);
+}
+.header-container nav ul .menu-link-selected {
+  background-color: rgba(248, 247, 216, 0.8);
+}
+@media (min-width: 900px) {
+  header {
+    padding-bottom: 0;
+    padding-top: 10rem;
+    margin: 0;
   }
-  .header-container nav {
-    margin-top: 3rem;
-  }
-  .header-container nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: space-around;
-    justify-content: space-around;
-  }
-  .header-container nav ul li a {
-    font-size: 2rem;
-  }
-  .header-container header #header {
+  header #header {
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .header-container header #header .header-content h1 {
-    font-size: 3rem;
+  header #header .header-content h1 {
+    font-size: 3.5rem;
     padding: 1rem;
   }
-  .header-container header #header .header-content p {
-    font-size: 2rem;
+  header #header .header-content p {
+    font-size: 2.5rem;
     padding: 1rem;
   }
 }
 @media (min-width: 900px) {
-  .header-container {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: space-between;
-    padding: 2rem;
-  }
-  .header-container header #header {
-    margin-right: 1rem;
-  }
-  .header-container header #header .header-content {
-    padding: 1rem;
-  }
-}
-@media (min-width: 900px) and (min-width: 900px) {
   .header-container {
     padding-left: 2rem;
     padding-top: 5rem;
@@ -293,38 +269,38 @@ body {
 }
 .footer-container footer p {
   text-align: center;
-  font-size: 1.6rem;
+  color: #191a1c;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .page-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../img/chalkboardcloseupzoom.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   height: 100%;
+}
+.content-background {
+  background-image: url(../img/chalkboardcloseupzoom.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: -5rem;
+  width: 100%;
 }
 .content-container {
   display: flex;
   flex-direction: column;
+  border-top: 3px solid #191a1c;
   padding: 2rem;
-}
-.content-container .default-content .content-text {
-  display: flex;
-  align-items: center;
-  align-content: center;
 }
 .content-container .content-section {
   border: 1px solid black;
   padding: 2rem;
-  line-height: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(248, 247, 216, 0.5);
 }
 .content-container .content-section .content-text {
+  background: rgba(248, 247, 216, 0.8);
   padding: 2rem;
 }
 .content-container .content-section .content-text h2 {

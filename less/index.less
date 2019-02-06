@@ -6,37 +6,35 @@
 @import "footer.less";
 
 
- .page-container {
+.page-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+    font-family: @opensans;
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100%;
+}
+
+ .content-background {
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -5rem;
+    width: 100%;
 }
 
 
 .content-container {
     display: flex;
     flex-direction: column;
+    border-top: 3px solid @chalkboardgrey;
     padding: 2rem;
-    .default-content {
-    .content-text {
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-    }
     .content-section {
         border: 1px solid black;
         padding: 2rem;
-        line-height: 2.5rem;
-        background-color: @whiteopaque;
+        background: @headeropaquebg;
         .content-text{
+            background: @headermoreopaquebg;
             padding: 2rem;
             h2 {
                 font-size: 2rem;
