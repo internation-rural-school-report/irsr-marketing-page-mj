@@ -209,6 +209,20 @@ body {
 .header-container nav ul .menu-link-selected {
   background-color: rgba(248, 247, 216, 0.8);
 }
+.header-container .big-sign-up-button {
+  font-size: 2.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(248, 247, 216, 0.5);
+  border: 2px solid #191a1c;
+  color: #191a1c;
+}
+.header-container .big-sign-up-button:hover {
+  background-color: rgba(248, 247, 216, 0.8);
+}
 @media (min-width: 900px) {
   header {
     padding-bottom: 0;
