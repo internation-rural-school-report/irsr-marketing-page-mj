@@ -179,14 +179,12 @@ body {
   font-size: 1.6rem;
   padding: 0.5rem;
   text-align: center;
-  font-weight: bold;
 }
 .header-container nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 .header-container nav ul {
   display: flex;
@@ -194,8 +192,13 @@ body {
 }
 .header-container nav ul li {
   font-size: 1rem;
+<<<<<<< HEAD
   padding: 0.5rem 3rem;
   border: 2px solid #2A2A2A;
+=======
+  padding: 1rem 3rem;
+  border: 2px solid #191a1c;
+>>>>>>> parent of ac15fac... some copy done, log in form styled
   margin: 0.5rem;
   background-color: #ffffff;
 }
@@ -258,10 +261,17 @@ body {
   .header-container header #header .header-content {
     padding: 1rem;
   }
+<<<<<<< HEAD
   .header-container header nav {
     margin-left: 2rem;
   }
   .header-container header nav ul li a {
+=======
+  .header-container nav ul li {
+    padding: 2rem;
+  }
+  .header-container nav ul li a {
+>>>>>>> parent of ac15fac... some copy done, log in form styled
     font-size: 2rem;
   }
 }
@@ -312,7 +322,7 @@ body {
   padding: 2rem;
 }
 .content-container .content-section .content-text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   padding: 0.5rem;
   border-bottom: 1px dotted black;
@@ -336,26 +346,4 @@ body {
 }
 .menu-item-selected {
   display: block;
-}
-.log-in-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 2rem;
-  margin: 1rem;
-}
-.log-in-form form {
-  border: 2px solid #191a1c;
-  padding: 1rem;
-}
-.log-in-form form input {
-  margin: 1rem;
-  padding: 0.5rem;
-}
-.log-in-form form .submit-button {
-  padding: 1rem 3rem;
-  font-size: 1.5rem;
 }

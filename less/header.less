@@ -39,7 +39,6 @@
                     font-size: @smalltext;
                     padding: .5rem;
                     text-align: center;
-                    font-weight: bold;
                 }
             }
         }
@@ -50,15 +49,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin-bottom: 2rem;
     ul {
         display: flex;
         flex-direction: column;
        
         li {
             font-size: 1rem;
-            padding: .5rem 3rem;
-            border: 2px solid @darkgrey;
+            padding: 1rem 3rem;
+            border: 2px solid @chalkboardgrey;
             margin: .5rem;
             background-color: @white;
             a {
@@ -137,16 +135,30 @@ margin-bottom: 2rem;
                 padding: 1rem;
             }
         }
-        nav {
-            margin-left: 2rem;
-            ul {
-                li {
-                    a {
-                        font-size: @regular;
-                    }
+    }
+}
+@media @desktop {
+    .header-container {
+        padding-left: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+    nav {
+        margin-top: 3rem;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: space-around;
+            justify-content: space-around;
+            li {
+                padding: 2rem;
+                a {
+                    font-size: 2rem;
                 }
             }
         }
+    }
     }
 }
 }
