@@ -299,6 +299,12 @@ body {
   justify-content: space-around;
   flex-wrap: no-wrap;
 }
+@media (min-width: 900px) {
+  .testimonial-slides .content-img {
+    width: 40%;
+    max-height: 300px;
+  }
+}
 /* Slideshow container */
 .slideshow-container {
   display: flex;
@@ -307,9 +313,14 @@ body {
   align-items: center;
   margin: auto;
 }
+.slide-cont {
+  display: flex;
+  flex-direction: column-reverse;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
+  text-align: center;
 }
 .show-slide {
   display: block;
@@ -320,9 +331,10 @@ body {
 /* Next & previous buttons */
 .prev,
 .next {
-  color: #191a1c;
+  color: #f8f7d8;
   font-weight: bold;
   font-size: 2rem;
+  background-color: #61614f;
 }
 /* Fading animation */
 /*

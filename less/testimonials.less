@@ -5,6 +5,12 @@
   align-items: space-around;
   justify-content: space-around;
   flex-wrap: no-wrap;
+  @media @desktop {
+    .content-img {
+      width: 40%;
+      max-height: 300px;
+    }
+  }
 }
 
 
@@ -17,9 +23,15 @@
   margin: auto;
 }
 
+.slide-cont {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
+  text-align: center;
 }
 
  .show-slide {
@@ -32,9 +44,10 @@
 
 /* Next & previous buttons */
 .prev, .next {
-  color: @chalkboardgrey;
+  color: @bgcolor;
   font-weight: bold;
   font-size: 2rem;
+  background-color: @wallcolor;
 }
 
 /* Fading animation */
