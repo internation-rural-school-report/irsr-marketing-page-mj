@@ -20,8 +20,12 @@
     */
 }
 
-// CONTENT STYLES
+a {
+    text-decoration: none;
+    font-family: @opensans;
+}
 
+// CONTENT STYLES
  .content-background {
     background-image: url(../img/chalkboardcloseupzoom.jpg);
     background-size: cover;
@@ -44,6 +48,10 @@
         padding: 2rem;
         background: @headeropaquebg;
         .content-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background: @headermoreopaquebg;
             padding: 2rem;
             h2 {
@@ -178,18 +186,36 @@
     background-color: @chalkboardgrey;
     border: 1px solid @bgcolor;
     color: @bgcolor;
+    text-decoration: none;
 }
 
 .school-sign-up:hover {
     background-color: @headermoreopaquebg;
     color: @chalkboardgrey;
     border: 1px solid @chalkboardgrey;
+    text-decoration: none;
 }
-
-
 
 .sign-up-bottom {
     font-size: 2.2rem;
+}
+
+.login-button {
+    font-size: 2rem;
+    font-family: @opensans;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: @chalkboardgrey;
+    border: 1px solid @bgcolor;
+    color: @bgcolor;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: @headermoreopaquebg;
+    color: @chalkboardgrey;
+    border: 1px solid @chalkboardgrey;
 }
 
 // STYLES FOR JS 
