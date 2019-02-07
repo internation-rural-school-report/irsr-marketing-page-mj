@@ -278,8 +278,10 @@ body {
 }
 .footer-container {
   width: 100%;
-  padding-top: 0.7rem;
-  padding-bottom: 0.5rem;
+  /*
+    padding-top: .7rem;
+    padding-bottom: .5rem;
+    */
 }
 .footer-container footer {
   display: flex;
@@ -360,10 +362,12 @@ body {
 .page-container {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  background-image: url(../img/chalkboardcloseupzoom.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+  /*
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    */
 }
 .content-background {
   background-image: url(../img/chalkboardcloseupzoom.jpg);
