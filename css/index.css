@@ -277,6 +277,7 @@ body {
   }
 }
 .footer-container {
+  flex-shrink: 0;
   width: 100%;
   /*
     padding-top: .7rem;
@@ -362,6 +363,9 @@ body {
 .page-container {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   /*
     background-image: url(../img/chalkboardcloseupzoom.jpg);
     background-size: cover;
