@@ -2,8 +2,8 @@
 .testimonial-slides {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
-  justify-content: space-between;
+  align-items: space-around;
+  justify-content: space-around;
   flex-wrap: no-wrap;
 }
 
@@ -12,8 +12,8 @@
 .slideshow-container {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: space-between;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -22,26 +22,23 @@
   display: none;
 }
 
-.show-slide {
+ .show-slide {
   display: block;
 }
 
+.hide-slide {
+  display: none;
+};
+
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
   color: @chalkboardgrey;
   font-weight: bold;
   font-size: 2rem;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
 /* Fading animation */
+/*
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -58,3 +55,5 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+*/

@@ -295,16 +295,16 @@ body {
 .testimonial-slides {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
-  justify-content: space-between;
+  align-items: space-around;
+  justify-content: space-around;
   flex-wrap: no-wrap;
 }
 /* Slideshow container */
 .slideshow-container {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: space-between;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
 /* Hide the images by default */
@@ -314,42 +314,36 @@ body {
 .show-slide {
   display: block;
 }
+.hide-slide {
+  display: none;
+}
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
   color: #191a1c;
   font-weight: bold;
   font-size: 2rem;
 }
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 /* Fading animation */
+/*
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: .4} 
+  to {opacity: 1}
 }
+
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: .4} 
+  to {opacity: 1}
 }
+
+*/
 .page-container {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
