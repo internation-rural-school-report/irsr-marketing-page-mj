@@ -4,39 +4,55 @@
 @import "mixins.less";
 @import "header.less";
 @import "footer.less";
+@import "testimonials.less";
 
 
- .page-container {
+.page-container {
     width: 100%;
+    font-family: @opensans;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-image: url(../img/nikhita-s-615116-unsplash.jpg);
+    /*
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100%;
+    */
 }
 
+a {
+    text-decoration: none;
+    font-family: @opensans;
+}
+
+// CONTENT STYLES
+ .content-background {
+    background-image: url(../img/chalkboardcloseupzoom.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
 
 .content-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    .default-content {
-    .content-text {
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-    }
     .content-section {
         border: 1px solid black;
         padding: 2rem;
-        line-height: 2.5rem;
-        background-color: @whiteopaque;
+        background: @headeropaquebg;
         .content-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: @headermoreopaquebg;
             padding: 2rem;
             h2 {
                 font-size: 2rem;
@@ -45,14 +61,166 @@
                 border-bottom: 1px dotted black;
                 text-align: center;
             }
+            h3 {
+                font-size: 1.8rem;
+            }
+            h5 {
+                
+                font-size: 2rem;
+                text-align: center;
+            }
             p {
                 font-size: 1.5rem;
                 padding: 1rem;
+            }
+            ul {
+                font-size: 1.5rem;
+                padding: 1rem;
+                list-style-type: square;
+                li {
+                    font-size: 1.25rem;
+                    padding: .5rem;
+                    text-align: left;
+                }
+            }
+            address {
+                font-size: 1.5rem;
+                padding: 1rem;
+                line-height: 2rem;
+                display: block;
+                text-align: center;
+            }
+            .content-box-container {
+                display: flex;
+                flex-direction: column;
+                .user {
+                    background-color: @headermoreopaquebg;
+                }
+                .how-works {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .issues {
+                    border-top: 1px dotted @chalkboardgrey;
+                    padding-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media @desktop {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .content-img {
+                        max-width: 100%;
+                        width: 40%;
+                    }
+                }
+                }
+                .content-box {
+                    border: 1px dotted @chalkboardgrey;
+                    padding: 1rem;
+                    margin: 1rem;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                @media @desktop {
+                    flex-direction: row;
+                }
             }
         }
     }
 }
 
+
+
+.desktop-box {
+    border: 1px dotted @chalkboardgrey;
+    padding: 1rem;
+    
+}
+.content-img {
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+
+// CONTENT SPECIFIC STYLES 
+
+
+//login page
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+//contact page 
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// styles for buttons 
+
+.school-sign-up {
+    font-size: 1.5rem;
+    font-family: @opensans;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: @chalkboardgrey;
+    border: 1px solid @bgcolor;
+    color: @bgcolor;
+    text-decoration: none;
+}
+
+.school-sign-up:hover {
+    background-color: @headermoreopaquebg;
+    color: @chalkboardgrey;
+    border: 1px solid @chalkboardgrey;
+    text-decoration: none;
+}
+
+.sign-up-bottom {
+    font-size: 2.2rem;
+}
+
+.login-button {
+    font-size: 2rem;
+    font-family: @opensans;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: @chalkboardgrey;
+    border: 1px solid @bgcolor;
+    color: @bgcolor;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: @headermoreopaquebg;
+    color: @chalkboardgrey;
+    border: 1px solid @chalkboardgrey;
+}
+
+// STYLES FOR JS 
+
+// classes for JS functionality for menu - content connection
 .menu-item {
     display: none;
 }
@@ -60,4 +228,5 @@
 .menu-item-selected {
     display: block;
 }
+
 
